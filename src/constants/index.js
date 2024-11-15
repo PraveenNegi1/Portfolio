@@ -89,7 +89,7 @@ export const experiences = [
     title: "Full-Stack Developer",
     company_name: "DIGITAL 360",
     icon: digital360,
-    iconBg: "#1a1a1a",
+    iconBg: "#305cde",
     date: "Sep 2024 - Present",
 
     points: [
@@ -103,7 +103,7 @@ export const experiences = [
     title: "React Native Developer",
     company_name: "Rolaface Software",
     icon: rolafaceLogo,
-    iconBg: "#ffffff",
+    iconBg: "#00b9b3",
     date: "Sep 2023 - Aug 2024",
     points: [
       "Developed procedures and modified existing packages to provide solutions for and banking systems",
