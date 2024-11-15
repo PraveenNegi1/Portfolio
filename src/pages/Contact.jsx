@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
@@ -20,54 +19,56 @@ const Contact = () => {
   const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          from_email: form.email,
-          to_email: "praveennegi700@gmail.com",
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "c8ef694c-3f64-405f-b1c2-536da52dabb7",
+          name: form.name,
+          email: form.email,
           message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+        }),
+      });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      if (response.ok) {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: "Thank you for your message 😃",
+          type: "success",
+        });
+
+        setTimeout(() => {
+          hideAlert(false);
           setCurrentAnimation("idle");
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
+          setForm({
+            name: "",
+            email: "",
+            message: "",
           });
-        }
-      );
+        }, 3000);
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      setLoading(false);
+      console.error(error);
+      setCurrentAnimation("idle");
+
+      showAlert({
+        show: true,
+        text: "I didn't receive your message 😢",
+        type: "danger",
+      });
+    }
   };
 
   return (
@@ -134,8 +135,6 @@ const Contact = () => {
             {loading ? "Sending..." : "Submit"}
           </button>
         </form>
-       
-
       </div>
 
       {/* <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
