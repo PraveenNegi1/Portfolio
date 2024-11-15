@@ -14,7 +14,7 @@ const Projects = () => {
         </span>
       </h1>
 
-      <p className='text-slate-500 mt-2 leading-relaxed'>
+      <p className='text-slate-500 mt-2 leading-relaxed text-[20px]'>
       Here are some projects I have worked on and created to develop and improve my skills.
       </p>
 
