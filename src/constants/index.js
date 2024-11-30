@@ -86,7 +86,7 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Full-Stack Developer",
+    title: "FrontEnd Developer",
     company_name: "DIGITAL 360",
     icon: digital360,
     iconBg: "#305cde",
@@ -100,7 +100,7 @@ export const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Software Consultant",
     company_name: "Rolaface Software",
     icon: rolafaceLogo,
     iconBg: "#00b9b3",
