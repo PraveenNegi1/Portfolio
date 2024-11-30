@@ -83,7 +83,7 @@ const Home = () => {
             intensity={1}
           />
 
-          {/* <Bird /> */}
+          <Bird />
           <Sky isRotating={isRotating} />
           <Island
             isRotating={isRotating}
@@ -93,22 +93,22 @@ const Home = () => {
             rotation={[0.1, 4.7077, 0]}
             scale={islandScale}
           />
-          {/* <Plane
+          <Plane
             isRotating={isRotating}
             position={biplanePosition}
             rotation={[0, 20.1, 0]}
             scale={biplaneScale}
-          /> */}
+          />
         </Suspense>
       </Canvas>
-      <div className="absolute bottom-2 left-2">
+      {/* <div className="absolute bottom-2 left-2">
         <img
           src={!isPlayingMusic ? soundoff : soundon}
           alt="jukebox"
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className="w-10 h-10 cursor-pointer object-contain"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
