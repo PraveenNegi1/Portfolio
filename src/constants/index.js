@@ -146,7 +146,16 @@ export const projects = [
     theme: "btn-back-green",
     name: "GoEdu",
     description:
-      'Go Edu, India`s No. 1 AI counseling portal, revolutionizes college admissions with personalized guidance and expert support. Our AI-driven platform ensures students find their perfect college match effortlessly',
+      "Go Edu, India`s No. 1 AI counseling portal, revolutionizes college admissions with personalized guidance and expert support. Our AI-driven platform ensures students find their perfect college match effortlessly",
     link: "https://www.goedu.in/",
   },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "EduKaro",
+    description:
+      "EduKaro, is a counseling portal, As a leading educational site, EduKaro also offers a wealth of resources to help students excel in their academic journey.",
+    link: "https://edu-karo.vercel.app/",
+  },
+ 
 ];
