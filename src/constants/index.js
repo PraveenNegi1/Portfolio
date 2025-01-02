@@ -139,7 +139,7 @@ export const projects = [
     name: "Pastes App",
     description:
       "A Paste App for saving and organizing your work.A Paste App for Effortlessly Saving and Organizing Your Creative Work. A Paste App for Saving, Organizing, and Accessing Your Work Anytime.",
-    link: "https://github.com/PraveenNegi1/React/tree/master/PasteApp",
+    link: "https://paste-app-one-sooty.vercel.app/",
   },
   {
     iconUrl: threads,
@@ -150,12 +150,11 @@ export const projects = [
     link: "https://www.goedu.in/",
   },
   {
-    iconUrl: threads,
+    iconUrl: estate,
     theme: "btn-back-green",
     name: "EduKaro",
     description:
       "EduKaro, is a counseling portal, As a leading educational site, EduKaro also offers a wealth of resources to help students excel in their academic journey.",
     link: "https://edu-karo.vercel.app/",
   },
- 
 ];
