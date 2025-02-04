@@ -66,7 +66,7 @@ const Contact = () => {
       showAlert({
         show: true,
         text: "I didn't receive your message 😢",
-        type: "danger",
+        type: "Error",
       });
     }
   };
