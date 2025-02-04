@@ -20,7 +20,7 @@ const About = () => {
         👋
       </h1>
       <p className="text-[16px]">
-        I&apos;m Full-stack developer with expertise in React, Next.js, Node.js,
+        I&apos;m MERN developer with expertise in React, Next.js, Node.js,
         and database technologies. Seeking for Web Development opportunities
         where I can leverage my skills to create meaningful connections between
         products and users.
