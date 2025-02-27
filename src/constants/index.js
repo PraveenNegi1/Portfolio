@@ -89,7 +89,7 @@ export const experiences = [
     title: "FrontEnd Developer",
     company_name: "DIGITAL 360",
     icon: digital360,
-    iconBg: "#305cde",
+    iconBg: "#f5b7b1",
     date: "Sep 2024 - Present",
 
     points: [
@@ -151,10 +151,19 @@ export const projects = [
   },
   {
     iconUrl: estate,
-    theme: "btn-back-green",
+    theme: "btn-back-blue",
     name: "EduKaro",
     description:
       "EduKaro, is a counseling portal, As a leading educational site, EduKaro also offers a wealth of resources to help students excel in their academic journey.",
     link: "https://edu-karo.vercel.app/",
+  },
+
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-orange",
+    name: "ShaadiVyah",
+    description:
+      "Shaadivyah is Uttarakhand's first wedding destination portal, dedicated to making destination weddings in the region seamless and memorable. Supporting Prime Minister Narendra Modi'sWed in India initiative, it offers couples a chance to celebrate their love in Uttarakhand's picturesque and spiritually uplifting locations.",
+    link: "https://shaadi-vyah-mu.vercel.app/",
   },
 ];

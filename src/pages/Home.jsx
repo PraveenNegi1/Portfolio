@@ -61,6 +61,7 @@ const Home = () => {
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
+      
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -81,11 +82,10 @@ const Home = () => {
             skyColor="#b1e1ff"
             groundColor="#000000"
             intensity={1}
-          />
-
+          />      
           <Bird />
           <Sky isRotating={isRotating} />
-          <Island
+          {/* <Island
             isRotating={isRotating}
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
@@ -98,7 +98,7 @@ const Home = () => {
             position={biplanePosition}
             rotation={[0, 20.1, 0]}
             scale={biplaneScale}
-          />
+          /> */}
         </Suspense>
       </Canvas>
       {/* <div className="absolute bottom-2 left-2">
