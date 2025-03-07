@@ -43,7 +43,7 @@ const Contact = () => {
         showAlert({
           show: true,
           text: "Thank you for your message 😃",
-          type: "success",
+          type: "message send successfuly",
         });
 
         setTimeout(() => {
