@@ -167,10 +167,10 @@ export const projects = [
     link: "https://shaadi-vyah-mu.vercel.app/",
   },
   {
-    iconUrl: pricewise,
-    theme: "btn-back-orange",
+    iconUrl: estate,
+    theme: "btn-back-yellow",
     name: "Uttarakhand Travels",
-    Description: "Explore Uttarakhand's beauty with tailored travel experiences.",
+    description: "Explore Uttarakhand's beauty with tailored travel experiences. From serene hill stations and sacred pilgrimage sites to thrilling trekking trails and rich cultural heritage, Uttarakhand Travels helps you discover the heart of Devbhoomi. Whether you're seeking adventure, spiritual retreat, or a relaxing getaway, we curate journeys that create lasting memories.",
     link: "https://travles-ten.vercel.app/",
   }
   
