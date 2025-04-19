@@ -166,4 +166,12 @@ export const projects = [
       "Shaadivyah is Uttarakhand's first wedding destination portal, dedicated to making destination weddings in the region seamless and memorable. Supporting Prime Minister Narendra Modi'sWed in India initiative, it offers couples a chance to celebrate their love in Uttarakhand's picturesque and spiritually uplifting locations.",
     link: "https://shaadi-vyah-mu.vercel.app/",
   },
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-orange",
+    name: "Uttarakhand Travels",
+    Description: "Explore Uttarakhand's beauty with tailored travel experiences.",
+    link: "https://travles-ten.vercel.app/",
+  }
+  
 ];
